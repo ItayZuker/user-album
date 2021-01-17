@@ -1,0 +1,35 @@
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+
+.selected-album-container {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .album-data {
+        height: fit-content;
+        overflow: hidden scroll;
+        .data-container {
+            width: 100%;
+            background-color: $red;
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1vh;
+            p {
+                font-size: 20px;
+                margin: 2vh 2vh 2vh 2vh;
+                span {
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+}

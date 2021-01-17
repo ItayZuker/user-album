@@ -1,0 +1,49 @@
+$height: 35vh;
+
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+.photos-container {
+    width: $height;
+    height: $height;
+    background-color: $darkGray;
+    overflow: hidden;
+    border: 4px solid $darkGray;
+    display: flex;
+    justify-content: center;
+    .gallery-place-holder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 24px;
+            color: $lightGray
+        }
+        &.hide {
+            display: none;
+        }
+    }
+    .gallery {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        opacity: 0%;
+        transition: 1s;
+        &.fade-in {
+            opacity: 100%;
+        }
+        &.fade-Out {
+            opacity: 0%;
+        }
+    }
+}
+

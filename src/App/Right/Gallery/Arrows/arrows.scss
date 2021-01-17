@@ -1,0 +1,39 @@
+$height: 5vh;
+
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+.arrows-container {
+    width: 50vh;
+    position: absolute;
+    transform: translateY(25vh);
+    display: flex;
+    justify-content: space-between;
+    .left {
+        width: 0; 
+        height: 0; 
+        border-top: $height/1.2 solid transparent;
+        border-bottom: $height/1.2 solid transparent; 
+        border-right: $height/1.2 solid $red; 
+        &:hover {
+            border-right-color: $red_hover;
+            cursor: pointer;
+        }
+    }
+    .right {
+        width: 0; 
+        height: 0; 
+        border-top: $height/1.2 solid transparent;
+        border-bottom: $height/1.2 solid transparent;
+        border-left: $height/1.2 solid $red;
+        &:hover {
+            border-left-color: $red_hover;
+            cursor: pointer;
+        }
+    }
+}
+

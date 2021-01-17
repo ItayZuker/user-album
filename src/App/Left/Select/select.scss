@@ -1,0 +1,31 @@
+$height: 35vh;
+
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+
+
+.select-container {
+    width: 100%;
+    height: 15%;
+    margin-bottom: $height/20;
+    .users-selection {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        outline: none;
+        color: white;
+        background-color: $red;
+        border: none;
+        text-indent: 10px;
+        option {
+            color: $red;
+            background-color: $darkGray;
+            text-indent: 10px;
+        }
+    }
+}

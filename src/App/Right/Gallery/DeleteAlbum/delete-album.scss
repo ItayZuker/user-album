@@ -1,0 +1,30 @@
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+.delete-album-container {
+    height: 4vh;
+    width: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &:hover {
+        cursor: pointer;
+    }
+    .delete-album {
+        font-weight: 600;
+        color: $darkGray;
+        font-size: 50px;
+        transform: rotate(45deg);
+        &.active {
+            color: $red;
+            &:hover {
+                color: $red_hover;
+            }
+        }
+    }
+}

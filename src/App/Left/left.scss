@@ -1,0 +1,25 @@
+$height: 40vh;
+
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+.left-container {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .container {
+        height: $height;
+        width: $height * 1.3;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,14 @@
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+.right-container {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

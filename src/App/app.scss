@@ -1,0 +1,38 @@
+$height: 50vh;
+$darkGray: rgb(50, 50, 50);
+$darkGray_hover: rgb(70, 70, 70);
+$lightGray: lightgray;
+$red: rgb(255, 0, 0);
+$red_hover: rgb(200, 0, 0);
+
+
+* {
+    margin: 0;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.app-container {
+    width: $height * 2.5;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $lightGray;
+}
+.center-line {
+    position: absolute;
+    width: 4px;
+    height: inherit;
+    background-color: $darkGray;
+}
